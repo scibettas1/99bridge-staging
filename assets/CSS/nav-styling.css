@@ -1,0 +1,52 @@
+.specials{
+    background: blue;
+    color: white;
+    text-align: center;
+    height: 30px;
+}
+
+.nav-btn{
+    float:right;
+    margin: 30px 0px 10px 10px;
+}
+
+.uk-button-default {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    float: right;
+    margin: 10px;
+    padding: 12px 16px;
+    z-index: 2000;
+}
+.uk-offcanvas-bar-animation {
+    transition: right .3s ease-out;
+}
+.uk-offcanvas {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    z-index: 1000;
+}
+.uk-open>.uk-offcanvas-bar {
+    right: 0;
+    left: auto;
+}
+.uk-offcanvas-bar {
+    right: -350px;
+    left: auto;
+    width: 350px;
+    margin-top: 130px;
+    padding: 40px 40px;
+}
+@media only screen and (max-with: 530px){
+    .nav-btn{
+        float:left;
+        margin: 30px 0px 10px 10px;
+    }
+}
+

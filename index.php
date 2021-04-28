@@ -7,7 +7,7 @@
     <title>99 Bridge</title>
 </head>
 <body>
-    <script language="javascript" type="text/javascript" src="js/navbar.js"></script>
+<?php include 'header.php';?>
     
 </body>
 </html>
