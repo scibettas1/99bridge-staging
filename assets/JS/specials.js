@@ -1,1 +1,1 @@
-document.write("<div class='row specials'><p class='text-center'>Leasing special goes here across the top</p></div>")
+document.write("<div class='row specials sticky'><p class='text-center special-text'>Leasing special goes here across the top</p></div>")

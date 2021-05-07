@@ -1,33 +1,69 @@
+/* This contains styling for the navigation and header. */
+
+.sticky {
+    position: fixed;
+    width: 100%;
+}
+.btn-login {
+    color: #fff;
+    background-color: #34657F;
+    border-color: #34657F;
+}
+.special-text {
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
 .specials{
-    background: blue;
+    background: #34657F;
     color: white;
     text-align: center;
     height: 40px;
+    z-index: 200;
+    width: 101%;
 }
+
 .logo {
     max-width:400px;
     width: auto;
-    margin: 28px;
+    margin: 57px 28px 28px 28px;
+}
+.logo-small {
+    max-width:200px;
+    width: auto;
+    margin: 64px 28px 0px 28px;
+}
+.logo-hidden, .menu-hidden {
+    display:none;
 }
 
 .nav-btn{
     float:right;
-    margin: 28px 0px 10px 28px;
+    margin: 57px 0px 10px 28px;
     z-index: 2000;
+}
+/* this is for the close button */
+svg:not(:root) {
+    overflow: hidden;
+    width: 30px;
+}
+
+.change-color {
+    background-color: white;
 }
 
 .uk-button-default {
     background-color: transparent;
-    color: #333;
-    border: 1px solid #e5e5e5;
+    color: #191011;
+    border: none;
     border-radius: 8px;
     float: right;
-    margin: 28px;
+    margin: 39px 28px 0px 28px;
     padding: 12px 16px;
     z-index: 2000;
 }
 .uk-offcanvas-bar-animation {
-    transition: right .3s ease-out;
+    transition: right .4s ease-out;
 }
 .uk-offcanvas {
     display: none;
@@ -36,23 +72,68 @@
     bottom: 0;
     left: auto;
     right: 0;
-    z-index: 100;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 .uk-open>.uk-offcanvas-bar {
     right: 0;
     left: auto;
 }
 .uk-offcanvas-bar {
-    right: -350px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: #34657F;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    right: -2000px;
     left: auto;
-    width: 350px;
-    /* margin-top: 130px; */
+    width: 100%;
     padding: 40px 40px;
+    overflow: hidden;
 }
-/* @media only screen and (max-with: 530px){
-    .nav-btn{
-        float:left;
-        margin: 30px 0px 10px 10px;
+.uk-navbar-item {
+    justify-content: left;
+    padding: 0px;
+}
+.menu-logo {
+    width: 90%;
+    padding-bottom: 20px; 
+}
+.nav-links {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.nav-links:hover {
+    color: #EBD4CB;
+}
+
+
+@media only screen and (max-width: 530px) {
+    .specials {
+        width: 107%;
     }
-} */
+
+    .logo, .logo-small{
+      max-width: 314px;
+      width: 83%;
+      margin: 57px 28px 0px 28px;
+    }
+  
+    .nav-btn {
+      float: right;
+      margin: 19px 10px 0px 0px;
+      z-index: 2000;
+    }
+  
+    .uk-button-default {
+      margin: 0px;
+    }
+    
+  }
+  
 

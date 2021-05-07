@@ -1,0 +1,30 @@
+/* This contains styling for the homepage only which has a differnet layout than the other pages. */
+.hero {
+    background-image: linear-gradient(180deg,rgba(34, 34, 34,.52),rgba(34, 34, 34,.25)),url("../images/lounge.jpg") ;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    letter-spacing: 25px;
+    margin-top: 26%;
+    font-weight: 600;
+}
+
+/* save this for further down the page
+background-image: linear-gradient(180deg,rgba(52, 101, 127,.52),rgba(235, 212, 203,.75)),url("../images/lounge.jpg") ; */
+
+
+@media only screen and (max-width: 530px) {
+
+    h1 {
+        font-size: 30px;
+        margin-top: 80%;
+    }
+
+}
