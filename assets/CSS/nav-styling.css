@@ -8,6 +8,7 @@
     color: #fff;
     background-color: #34657F;
     border-color: #34657F;
+    border-radius: 0px;
 }
 .special-text {
     text-transform: uppercase;
@@ -46,6 +47,7 @@
 svg:not(:root) {
     overflow: hidden;
     width: 30px;
+    margin: 36px 28px 0px 0px;
 }
 
 .change-color {
@@ -102,6 +104,7 @@ svg:not(:root) {
 .menu-logo {
     width: 90%;
     padding-bottom: 20px; 
+    margin-top: 28px;
 }
 .nav-links {
     font-size: 26px;
