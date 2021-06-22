@@ -1,23 +1,37 @@
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: #34657f;
+}
+a:focus,
+a:hover {
+  color: #c05135;
+  text-decoration: none;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgb(0 0 0 / 13%);
   -webkit-box-shadow: 0 0 1px rgb(255 255 255 / 50%);
 }
-h1, h2, h3, h4, h5, h6 {
-    margin: 14px 0;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    color: #34657f;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 14px 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #34657f;
 }
 #custom-nav {
   height: 36px;
   z-index: 100;
   position: fixed;
   background-color: #34657f;
-  width: 101%;
+  right: 0px;
+  left: 0px;
   text-align: center;
   color: white;
   padding-top: 5px;
@@ -32,9 +46,6 @@ header #login-links {
   position: fixed;
   right: 0;
 }
-#nav-container .navbar-toggle {
-  top: 72px;
-}
 
 #nav-container .side-menu #property-info:before {
   margin-bottom: 17px;
@@ -44,14 +55,14 @@ header #login-links {
 }
 
 header #login-links li {
-    background-color: #34657f;
-    border-radius: 5px;
-    box-shadow: 5px 3px 2px #00000025;
+  background-color: #34657f;
+  border-radius: 5px;
+  box-shadow: 5px 3px 2px #00000025;
 }
 
 header #login-links li:hover {
   cursor: pointer;
-  background-color: #5194B8;
+  background-color: #5194b8;
 }
 
 /* temporary code so that I can see the login buttons */
@@ -61,6 +72,12 @@ header #login-links li:hover {
 }
 
 /* <-------------------------hamburger menu-----------------------------> */
+
+a:focus,
+button:focus {
+  outline: none !important;
+  outline: none -webkit-focus-ring-color !important;
+}
 
 #nav-container .navbar-toggle #hamburger {
   padding: 15px;
@@ -72,6 +89,7 @@ header #login-links li:hover {
 #nav-container .navbar-toggle {
   right: 36px;
   left: auto;
+  top: 72px;
 }
 
 #nav-container .side-menu {
@@ -115,21 +133,41 @@ header #login-links li:hover {
   transform: none;
   z-index: 100;
 }
-#logo-container img {
+#landing #logo-container img {
   -webkit-filter: drop-shadow(5px 3px 2px #00000025);
   filter: drop-shadow(5px 3px 2px #00000025);
+  width: 85%;
 }
-
+/* <---------------------tagline-------------------------> */
 .tagline {
-  font-family: 'Oswald';
-    font-size: 116px;
-    color: white;
-    margin-top: 387px;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    max-width: 50%;
-    text-shadow: 8px 3px 15px #000000cf;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 116px;
+  line-height: 116px;
+  color: white;
+  margin-top: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  max-width: 50%;
+  text-shadow: 8px 3px 15px #000000cf;
+}
+.sub-tag {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  margin-top: 30px;
+  line-height: 42px;
+}
+.scroll {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 7px;
+  margin: 0;
+  margin: 51px 0 0;
+  line-height: 20px;
+}
+.arrow {
+  color: white;
 }
 /* <---------------------floor plan search-------------------------> */
 
@@ -138,25 +176,25 @@ header #login-links li:hover {
 }
 
 #floorplans #fp-title:before {
-    content: "Ready to start living your best life?";
-    font-size: 32px;
+  content: "Ready to start living your best life?";
+  font-size: 32px;
 }
 
 #floorplans {
-    background: #34657f;
-    border-radius: 0px 67px 0px 0px;
-    box-shadow: 8px -8px 15px #00000073;
+  background: #34657f;
+  border-radius: 0px 67px 0px 0px;
+  box-shadow: 8px -8px 15px #00000073;
 }
 
 .section-title {
-    font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 .section-caption {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-#floorplans  #fp-caption:before {
-    display:none;
+#floorplans #fp-caption:before {
+  display: none;
 }
 #floorplans #fp-button {
   max-width: 133px;
@@ -164,30 +202,35 @@ header #login-links li:hover {
 }
 
 .btn-primary {
-    font-family: 'Poppins', sans-serif;
-    color:white;
-    border-radius: 5px;
-    background: #C05135;
-    background: linear-gradient(140deg, #c05135 75%, #F2D5BB);
-    border-color:#C05135!important;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border-radius: 5px;
+  background: #c05135;
+  background: linear-gradient(140deg, #c05135 75%, #f2d5bb);
+  border-color: #c05135 !important;
 }
 .btn-primary:hover {
   color: #353831;
-  background: #F2D5BB;
+  background: #f2d5bb;
 }
 #floorplans #fp-button:before {
   content: "AVAILABILITY";
 }
 
 /* <--------------------- about -------------------------> */
+#about #scroll-content {
+  height: 465px;
+}
 
-#ar-text, #about #about-right #ar-image #panels, #about #about-left #ctmcontentcontainer:after {
-    display:none;
+#ar-text,
+#about #about-right #ar-image #panels,
+#about #about-left #ctmcontentcontainer:after {
+  display: none;
 }
 #about #about-right {
-    background-image: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/Unit%20Kitchen%20Rendering%20-%20FINAL,%20high%20res.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/Unit%20Kitchen%20Rendering%20-%20FINAL,%20high%20res.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* <--------------------- gallery section -------------------------> */
@@ -195,10 +238,10 @@ header #login-links li:hover {
 #gallery #gallery-text {
   background-color: #34657f;
 }
-@media (min-width: 1200px){
+@media (min-width: 1024px) {
   .col-lg-push-6 {
     left: 25%;
-}
+  }
 }
 
 #gallery #gallery-text #gallery-title:before {
@@ -206,26 +249,29 @@ header #login-links li:hover {
   font-size: 43.99px;
   font-weight: 400;
   color: white;
-
+}
+#gallery #gallery-text #gallery-caption {
+  font-size: 18px;
+  line-height: 18px !important;
 }
 #gallery #gallery-text #gallery-caption:before {
-  content: "The generous studio, one-and two-bedroom residences at 99 Bridge have been designed to offer exceptional comfort with a refined sensibility. Here, contemporary style comesstandard with only the finest of custom finishes and everyday conveniences, all with room to spread out and enjoy it.";
-  font-size: 18px;
+  content: "The generous one-and two-bedroom residences at 99 Bridge have been designed to offer exceptional comfort with a refined sensibility. Here, contemporary style comes standard with only the finest of custom finishes and everyday conveniences, all with room to spread out and enjoy it.";
 }
 .section-caption {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 23px;
 }
 #gallery #textbox-boxdecor-holder #textbox,
 #gallery #textbox-boxdecor-holder #textbox #block1,
-.blockreveal  {
-  display:none;
+.blockreveal {
+  display: none;
 }
 #gallery #gallery-image .overlay {
   background: none;
 }
 #gallery #gallery-image {
-  background: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/hillside-filler.jpg) center center no-repeat fixed;
+  background: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/hillside-filler.jpg)
+    center center no-repeat fixed;
   background-size: cover;
   width: 100vw;
   min-height: 800px;
@@ -233,10 +279,10 @@ header #login-links li:hover {
 }
 
 a#gallerybtn.btn.btn-primary {
-    margin: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    margin: 20px 0px 0px 0px;
+  margin: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 20px 0px 0px 0px;
 }
 
 /* <--------------------- neighborhood section (previously amenities) -------------------------> */
@@ -257,14 +303,9 @@ a#gallerybtn.btn.btn-primary {
   font-size: 43.99px;
   font-weight: 400;
 }
-#amenities #amenities-text #com-amenities #com-amenities-caption:before {
-  /* content: "Proximity to major highways. Superb shopping, dining and entertainment. Higher educationand top-ranked healthcare. Fabulous parks and the greatoutdoors. New Brunswick, New York City, and New Jersey’s shore points. Wherever you need to go, whatever you love to do, chances are it’s within easyreach of 99 Bridge.";
-  font-size: 18px; */
-  display:none;
-}
-#amenities #amenities-text #apt-amenities #apt-amenities-title:before {
-  /* content: "APARTMENT AMENITIES"; */
-  display:none;
+.neighborhood-sub-title {
+  font-size: 21.99px;
+  font-weight: 400;
 }
 #amenities #amenities-text .section-caption {
   padding: 0px 20px;
@@ -279,40 +320,29 @@ a#gallerybtn.btn.btn-primary {
   left: 50%;
   top: 35%;
   bottom: 33%;
-  border-left: 1px solid rgba(255,255,255,.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
 #amenities .row-bs3 {
   text-align: center;
 }
-#amenities #amenities-text #amenities-btn {
-  /* background-color: #F2D5BB;
-  margin-top: 50px; */
-  display:none;
-}
 #amenities #left-image {
-  background: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/460708989.jpg) center center no-repeat #34657f;
+  background: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/460708989.jpg)
+    center center no-repeat #34657f;
   background-size: cover;
 }
-
 #amenities #right-image {
-    background: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/iStock_000015044837XXLarge2.jpg) center right no-repeat #34657f;
-    background-size: cover;
+  background: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/iStock_000015044837XXLarge2.jpg)
+    center right no-repeat #34657f;
+  background-size: cover;
 }
-#amenities #left-image .amenity-caption .first-line:before {
-  /* content: "GET FIT"; */
-  display:none;
-}
-#amenities #left-image .amenity-caption .second-line:before {
-  /* content: "Remodeled fitness center"; */
-  display:none;
-}
-#amenities #right-image .amenity-caption .first-line:before {
-  /* content: "DESIGNER FINISHES"; */
-  display:none;
-}
+#amenities #amenities-text #com-amenities #com-amenities-caption:before,
+#amenities #amenities-text #apt-amenities #apt-amenities-title:before,
+#amenities #amenities-text #amenities-btn,
+#amenities #left-image .amenity-caption .first-line:before,
+#amenities #left-image .amenity-caption .second-line:before,
+#amenities #right-image .amenity-caption .first-line:before,
 #amenities #right-image .amenity-caption .second-line:before {
-  /* content: "Top of the line appliances"; */
-  display:none;
+  display: none;
 }
 
 /* <--------------------- footer -------------------------> */
@@ -321,28 +351,84 @@ footer {
   background: #292929;
   color: #fff;
   font-size: 13px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   padding: 30px 0;
 }
 #footer-image img {
   max-height: 66px;
 }
+footer #footer-links li {
+  line-height: 20px;
+}
+#address {
+  font-size: 28px;
+  line-height: 40px;
+}
+/* temporary code to hide inactive social media */
+.social-media-Pinterest,
+.social-media-Instagram {
+  display: none !important;
+}
 
 .go-top {
-  background: #C05135;
+  background: #c05135;
 }
 .go-top:hover {
-  background-color: #F2D5BB;
+  background-color: #f2d5bb;
   text-decoration: none;
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 /* <--------------------- mobile -------------------------> */
+@media (max-width: 1030px) {
+  #background_slider {
+    background: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/lounge.jpg)
+      center center no-repeat #34657f;
+    background-size: cover;
+  }
+  .carousel-inner {
+    display: none;
+  }
+  /* <---------------------mobile tagline-------------------------> */
+  .tagline {
+    font-size: 14vw;
+    line-height: 14vw;
+  }
+  .sub-tag {
+    font-size: calc(11px + 1.5vw);
+    margin-top: 14px;
+    line-height: calc(11px + 1.5vw);
+  }
+  /* <--------------------- mobile gallery section-------------------------> */
+  #gallery #textbox-boxdecor-holder {
+    display: none;
+  }
+  #gallery #gallery-image {
+    min-height: 600px !important;
+  }
+  #amenities #left-image,
+  #amenities #right-image {
+    background-position: top center;
+    min-height: 400px;
+  }
+}
 
-@media (max-width: 680px){
+@media (max-width: 680px) {
+  /* <--------------------- mobile nav & login links-------------------------> */
   header {
-      position: fixed;
-      background: #34657f;
+    position: fixed;
+    background: #34657f;
+    top: 36px;
+  }
+  header #login-links li {
+    box-shadow: none;
+  }
+  header #login-links li:nth-of-type(1) {
+    margin-right: 0px;
+  }
+  header #login-links {
+    padding: 10px 10px 10px 14px !important;
+    font-size: 4vw;
   }
   header #login-links #apldiv a:before {
     content: "APPLY NOW";
@@ -352,5 +438,55 @@ footer {
     content: "RESIDENT LOGIN";
     padding: 15px;
   }
+  /* <--------------------- mobile logo & its container-------------------------> */
+  #landing #logo-container img {
+    margin: 28px 0px;
   }
 
+  /* <-------------------------mobile hamburger menu-----------------------------> */
+  header #nav-container .side-menu {
+    background: #34657f;
+    width: 100vw !important;
+    left: -100vw;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+  header #nav-container .side-menu .navbar .nav {
+    width: 10vw;
+  }
+  .ninety9 {
+    width: 16vw;
+  }
+  .navbar .nav > li > a {
+    padding: 0 0px 0 9px;
+  }
+  .navbar .nav > li {
+    width: 200px;
+  }
+}
+
+/* <--------------------- mobile for old phones -------------------------> */
+@media (max-width: 320px) {
+  header #login-links {
+    padding: 10px 10px 10px 14px !important;
+    font-size: 4vw !important;
+  }
+}
+/* <--------------------- mobile for iPad 10.5in -------------------------> */
+@media (max-width: 877px) and (min-width: 764px) {
+  #landing #logo-container {
+    left: 14px;
+  }
+  #landing #logo-container img {
+    width: 75%;
+  }
+  header #login-links {
+    padding-right: 92px;
+  }
+  header #login-links li:nth-of-type(1) {
+    margin-right: 10px;
+  }
+  #nav-container .navbar-toggle {
+    right: 14px;
+  }
+}

@@ -1,15 +1,52 @@
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.3315399188496!2d-74.31097498435192!3d40.37934406583573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cde3ce6de4a5%3A0xd3102c555754178c!2s99%20Old%20Amboy%20Rd%2C%20Old%20Bridge%2C%20NJ%2008857!5e0!3m2!1sen!2sus!4v1622729576423!5m2!1sen!2sus"
-  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<!DOCTYPE html>
+<html lang="en">
 
-  <iframe
-  width="100%"
-  height="450"
-  style="border:0"
-  loading="lazy"
-  allowfullscreen
-  src="https://www.google.com/maps/embed/v1/place?key=f800eff10e0348a">
-</iframe>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
 
 
-<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=f800eff10e0348a&q=99+Bridge,Old+Bridge+NJ" allowfullscreen></iframe>
+  <script>
+    function initMap() {
+      const myLatLng = { lat: 40.37934, lng: -74.310975 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 16,
+        center: myLatLng,
+        mapId: "f800eff10e0348a",
+      });
+      const image = "https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/logo-map-outer-glow.png";
+      new google.maps.Marker({
+        position: myLatLng,
+        map,
+        icon: image,
+      });
+    }
+
+    initMap()
+
+  </script>
+
+  <div id="map"><iframe width="100%" height="450" frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGr0yjNEz31lMcJkV0_sF2rJ2WR57GXdI&q=place_id:ChIJpeRtzuPNw4kRjBdUV1UsENM"
+      allowfullscreen></iframe></div>
+
+  <div id="map"><iframe width="100%" height="800" frameborder="0" style="border:0" src="https://maps.googleapis.com/maps/api/directions/json?
+        origin=place_id:ChIJpeRtzuPNw4kRjBdUV1UsENM
+        &destination=place_id:ChIJA01I-8YVhkgRGJb0fW4UX7Y
+        &key=AIzaSyCGr0yjNEz31lMcJkV0_sF2rJ2WR57GXdI" allowfullscreen></iframe></div>
+
+
+
+        
+
+
+
+
+</body>
+
+</html>

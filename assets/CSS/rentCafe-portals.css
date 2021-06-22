@@ -1,16 +1,33 @@
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+#offcanvas_inner {
+  position: relative;
+  width: 88%;
+}
+a {
+  color: #34657f;
+}
+a:focus,
+a:hover {
+  color: #c05135;
+  text-decoration: none;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgb(0 0 0 / 13%);
   -webkit-box-shadow: 0 0 1px rgb(255 255 255 / 50%);
 }
-h1, h2, h3, h4, h5, h6 {
-    margin: 14px 0;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    color: #34657f;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 14px 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #34657f;
 }
 #custom-nav {
   height: 36px;
@@ -26,52 +43,60 @@ h1, h2, h3, h4, h5, h6 {
 /* <---------------------logo & its container-------------------------> */
 
 #landing #logo-container {
-    background-color: #fff0;
-    position: fixed;
-    top: 72px;
-    left: 40px;
-    transform: none;
-    z-index: 100;
-  }
-  #logo-container img {
-    -webkit-filter: drop-shadow(5px 3px 2px #00000025);
-    filter: drop-shadow(5px 3px 2px #00000025);
-  }
+  background-color: #fff0;
+  position: fixed;
+  top: 72px;
+  left: 40px;
+  transform: none;
+  z-index: 100;
+}
+#landing #logo-container img {
+  -webkit-filter: drop-shadow(5px 3px 2px #00000025);
+  filter: drop-shadow(5px 3px 2px #00000025);
+  width: 125%;
+}
 
 /* <--------------------- banner & content-------------------------> */
 
-#innerpage #content #colorblock, #rentcafe_onlineleasing #content #colorblock, #rentcafe_residentportal #content #colorblock {
-    height: 10px;
-    width: 115vw;
-    background: #C05135;
-    position: absolute;
-    top: 0;
-    left: 0;
+#innerpage #content #colorblock,
+#rentcafe_onlineleasing #content #colorblock,
+#rentcafe_residentportal #content #colorblock {
+  height: 10px;
+  width: 115vw;
+  background: #c05135;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-#innerpage #content h1:before, #rentcafe_onlineleasing #content h1:before, #rentcafe_residentportal #content h1:before {
-    /* content: "Your Life. Your Way.";
-    border-bottom: 4px solid #34657f;
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin-bottom: 25px; */
-    display: none;
+#innerpage #content h1:before,
+#rentcafe_onlineleasing #content h1:before,
+#rentcafe_residentportal #content h1:before {
+  display: none;
 }
-.input-append input[class*="span"], .input-append .uneditable-input[class*="span"], .input-prepend input[class*="span"], .input-prepend .uneditable-input[class*="span"], .row-fluid input[class*="span"], .row-fluid select[class*="span"], .row-fluid textarea[class*="span"], .row-fluid .uneditable-input[class*="span"], .row-fluid .input-prepend [class*="span"], .row-fluid .input-append [class*="span"] {
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
+.input-append input[class*="span"],
+.input-append .uneditable-input[class*="span"],
+.input-prepend input[class*="span"],
+.input-prepend .uneditable-input[class*="span"],
+.row-fluid input[class*="span"],
+.row-fluid select[class*="span"],
+.row-fluid textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"],
+.row-fluid .input-prepend [class*="span"],
+.row-fluid .input-append [class*="span"] {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
 }
 .btn-primary {
-    font-family: 'Poppins', sans-serif;
-    color:white;
-    border-radius: 5px;
-    background: #C05135;
-    background: linear-gradient(140deg, #c05135 75%, #F2D5BB);
-    border-color:#C05135!important;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border-radius: 5px;
+  background: #c05135;
+  background: linear-gradient(140deg, #c05135 75%, #f2d5bb);
+  border-color: #c05135 !important;
 }
 .btn-primary:hover {
   color: #353831;
-  background: #F2D5BB;
+  background: #f2d5bb;
 }
 /* <--------------------- footer -------------------------> */
 
@@ -79,19 +104,27 @@ footer {
   background: #292929;
   color: #fff;
   font-size: 13px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   padding: 30px 0;
 }
 #footer-image img {
   max-height: 66px;
 }
-/* <--------------------- mobile -------------------------> */
+footer #footer-links li {
+  line-height: 20px;
+}
+#address {
+  font-size: 28px;
+  line-height: 40px;
+}
+/* temporary code to hide inactive social media */
+.social-media-Pinterest,
+.social-media-Instagram {
+  display: none !important;
+}
 
-@media (max-width: 680px){
-  header {
-      position: fixed;
-      background: #34657f;
-  }
-  }
-
+/* <--------------------- mobile logo & its container-------------------------> */
+#landing #logo-container img {
+  margin: 28px 0px;
+}

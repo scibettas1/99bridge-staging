@@ -1,46 +1,56 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: #34657f;
+}
+a:focus,
+a:hover {
+  color: #c05135;
+  text-decoration: none;
 }
 ::-webkit-scrollbar-thumb {
-border-radius: 4px;
-background-color: rgb(0 0 0 / 13%);
--webkit-box-shadow: 0 0 1px rgb(255 255 255 / 50%);
+  border-radius: 4px;
+  background-color: rgb(0 0 0 / 13%);
+  -webkit-box-shadow: 0 0 1px rgb(255 255 255 / 50%);
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 14px 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #34657f;
 }
 #custom-nav {
-height: 36px;
-z-index: 100;
-position: fixed;
-background-color: #34657f;
-width: 101%;
-text-align: center;
-color: white;
-padding-top: 5px;
+  height: 36px;
+  z-index: 100;
+  position: fixed;
+  background-color: #34657f;
+  width: 101%;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
 }
 
 /* <-------------------------login links-----------------------------> */
 
 header #login-links {
-float: right;
-padding-right: 134px;
-padding-top: 72px;
-position: fixed;
-right: 0;
-}
-#nav-container .navbar-toggle {
-top: 72px;
+  float: right;
+  padding-right: 134px;
+  padding-top: 72px;
+  position: fixed;
+  right: 0;
 }
 
 #nav-container .side-menu #property-info:before {
-margin-bottom: 17px;
+  margin-bottom: 17px;
 }
 #nav-container .navbar-toggle #hamburger.active {
-box-shadow: none;
+  box-shadow: none;
 }
 
 header #login-links li {
@@ -50,110 +60,166 @@ header #login-links li {
 }
 
 header #login-links li:hover {
-cursor: pointer;
-background-color: #5194B8;
+  cursor: pointer;
+  background-color: #5194b8;
 }
 
 /* temporary code so that I can see the login buttons */
 .hidden {
-visibility: visible !important;
-display: inline-block !important;
+  visibility: visible !important;
+  display: inline-block !important;
 }
 
 /* <-------------------------hamburger menu-----------------------------> */
 
+a:focus,
+button:focus {
+  outline: none !important;
+  outline: none -webkit-focus-ring-color !important;
+}
+
 #nav-container .navbar-toggle #hamburger {
-padding: 15px;
-border-radius: 5px;
-background-color: #34657f;
-box-shadow: 5px 3px 2px #00000025;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #34657f;
+  box-shadow: 5px 3px 2px #00000025;
 }
 
 #nav-container .navbar-toggle {
-right: 36px;
-left: auto;
+  right: 36px;
+  left: auto;
+  top: 72px;
 }
 
 #nav-container .side-menu {
-position: fixed;
-top: 0;
-bottom: 0;
-box-sizing: border-box;
-background-color: #34657f;
-overflow-y: hidden !important;
--webkit-overflow-scrolling: touch;
-right: -4000px;
-left: auto;
-width: 100%;
-padding: 40px 40px;
-overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: #34657f;
+  overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  right: -4000px;
+  left: auto;
+  width: 100%;
+  padding: 40px 40px;
+  overflow: hidden;
 }
 .side-menu-open {
-left: auto !important;
-right: 0 !important;
+  left: auto !important;
+  right: 0 !important;
 }
 
 #property-info {
-display: none;
+  display: none;
 }
 .ninety9 {
-float: left;
+  float: left;
 }
 .menu-logo {
-width: 90%;
-padding-bottom: 20px;
-margin-top: 28px;
+  width: 90%;
+  padding-bottom: 20px;
+  margin-top: 28px;
 }
 
 /* <---------------------logo & its container-------------------------> */
 
 #landing #logo-container {
-background-color: #fff0;
-position: fixed;
-top: 72px;
-left: 40px;
-transform: none;
-z-index: 100;
+  background-color: #fff0;
+  position: fixed;
+  top: 72px;
+  left: 40px;
+  transform: none;
+  z-index: 100;
 }
-#logo-container img {
--webkit-filter: drop-shadow(5px 3px 2px #00000025);
-filter: drop-shadow(5px 3px 2px #00000025);
+#landing #logo-container img {
+  -webkit-filter: drop-shadow(5px 3px 2px #00000025);
+  filter: drop-shadow(5px 3px 2px #00000025);
+  width: 146%;
 }
 
 /* <--------------------- banner & content-------------------------> */
 
-#innerpage #content #colorblock, #rentcafe_onlineleasing #content #colorblock, #rentcafe_residentportal #content #colorblock {
-    height: 10px;
-    width: 115vw;
-    background: #C05135;
-    position: absolute;
-    top: 0;
-    left: 0;
+#innerpage #content #colorblock,
+#rentcafe_onlineleasing #content #colorblock,
+#rentcafe_residentportal #content #colorblock {
+  height: 10px;
+  width: 115vw;
+  background: #c05135;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-#innerpage #content h1:before, #rentcafe_onlineleasing #content h1:before, #rentcafe_residentportal #content h1:before {
-    /* content: "Your Life. Your Way.";
-    border-bottom: 4px solid #34657f;
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin-bottom: 25px; */
-    display: none;
+#innerpage #content h1:before,
+#rentcafe_onlineleasing #content h1:before,
+#rentcafe_residentportal #content h1:before {
+  display: none;
 }
-.input-append input[class*="span"], .input-append .uneditable-input[class*="span"], .input-prepend input[class*="span"], .input-prepend .uneditable-input[class*="span"], .row-fluid input[class*="span"], .row-fluid select[class*="span"], .row-fluid textarea[class*="span"], .row-fluid .uneditable-input[class*="span"], .row-fluid .input-prepend [class*="span"], .row-fluid .input-append [class*="span"] {
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
+.input-append input[class*="span"],
+.input-append .uneditable-input[class*="span"],
+.input-prepend input[class*="span"],
+.input-prepend .uneditable-input[class*="span"],
+.row-fluid input[class*="span"],
+.row-fluid select[class*="span"],
+.row-fluid textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"],
+.row-fluid .input-prepend [class*="span"],
+.row-fluid .input-append [class*="span"] {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
 }
 .btn-primary {
-    font-family: 'Poppins', sans-serif;
-    color:white;
-    border-radius: 5px;
-    background: #C05135;
-    background: linear-gradient(140deg, #c05135 75%, #F2D5BB);
-    border-color:#C05135!important;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border-radius: 5px;
+  background: #c05135;
+  background: linear-gradient(140deg, #c05135 75%, #f2d5bb);
+  border-color: #c05135 !important;
 }
 .btn-primary:hover {
   color: #353831;
-  background: #F2D5BB;
+  background: #f2d5bb;
+}
+/* <--------------------- map page -------------------------> */
+.leaflet-bottom,
+.leaflet-top {
+  z-index: 100;
+}
+#map {
+  min-height:800px;
+}
+/* <--------------------- amenity page -------------------------> */
+.amenity_description1 {
+	width:45%;
+	float: right;
+	text-align: left;
+	padding: 10px;
+}
+.amenity_description2 {
+	width:45%;
+	float: left;
+	text-align: left;
+	padding: 10px;
+}
+.amenity_description3 {
+	width:100%;
+        float: left;
+	text-align: left;
+	padding: 10px;
+}
+.description {
+  min-height: 252px;
+}
+/* <--------------------- contact us page -------------------------> */
+#ole_phone_number:before, #ole_office_address:before {
+  color: #c05135;
+}
+a.address-link{
+  line-height: 23px;
+}
+.input-append input[class*="span"],
+.ole_fancy_form button, .ole_fancy_form input[type=password], .ole_fancy_form input[type=text], .ole_fancy_form textarea {
+  font-family: "Poppins", sans-serif;
 }
 /* <--------------------- footer -------------------------> */
 
@@ -161,19 +227,44 @@ footer {
   background: #292929;
   color: #fff;
   font-size: 13px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   padding: 30px 0;
 }
 #footer-image img {
   max-height: 66px;
 }
-/* <--------------------- mobile -------------------------> */
+footer #footer-links li {
+  line-height: 20px;
+}
+#address {
+  font-size: 28px;
+  line-height: 40px;
+}
+/* temporary code to hide inactive social media */
+.social-media-Pinterest,
+.social-media-Instagram {
+  display: none !important;
+}
 
-@media (max-width: 680px){
+/* <--------------------- mobile-------------------------> */
+
+@media (max-width: 680px) {
+  /* <--------------------- mobile nav & login links-------------------------> */
   header {
-      position: fixed;
-      background: #34657f;
+    position: fixed;
+    background: #34657f;
+    top: 36px;
+  }
+  header #login-links li {
+    box-shadow: none;
+  }
+  header #login-links li:nth-of-type(1) {
+    margin-right: 0px;
+  }
+  header #login-links {
+    padding: 10px 10px 10px 14px !important;
+    font-size: 4vw;
   }
   header #login-links #apldiv a:before {
     content: "APPLY NOW";
@@ -183,5 +274,59 @@ footer {
     content: "RESIDENT LOGIN";
     padding: 15px;
   }
+  /* <--------------------- mobile logo & its container-------------------------> */
+  #landing #logo-container img {
+    margin: 28px 0px;
   }
 
+  /* <-------------------------mobile hamburger menu-----------------------------> */
+  header #nav-container .side-menu {
+    background: #34657f;
+    width: 100vw !important;
+    left: -100vw;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+  header #nav-container .side-menu .navbar .nav {
+    width: 10vw;
+  }
+  .ninety9 {
+    width: 16vw;
+  }
+  .navbar .nav > li > a {
+    padding: 0 0px 0 9px;
+  }
+  .navbar .nav > li {
+    width: 200px;
+  }
+  /* <-------------------------amenities page-----------------------------> */
+  .amenity_description1,  .amenity_description2 {
+    width:100%;
+  }
+}
+
+/* <--------------------- mobile for old phones -------------------------> */
+@media (max-width: 320px) {
+  header #login-links {
+    padding: 10px 10px 10px 14px !important;
+    font-size: 4vw !important;
+  }
+}
+/* <--------------------- mobile for iPad 10.5in -------------------------> */
+@media (max-width: 877px) and (min-width: 764px) {
+  #landing #logo-container {
+    left: 14px;
+  }
+  #landing #logo-container img {
+    width: 75%;
+  }
+  header #login-links {
+    padding-right: 92px;
+  }
+  header #login-links li:nth-of-type(1) {
+    margin-right: 10px;
+  }
+  #nav-container .navbar-toggle {
+    right: 14px;
+  }
+}
