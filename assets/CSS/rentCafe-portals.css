@@ -1,10 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-#offcanvas_inner {
-  position: relative;
-  width: 88%;
-}
 a {
   color: #34657f;
 }

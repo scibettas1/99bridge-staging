@@ -15,11 +15,12 @@ $('#landing').append('<div id="tagline" class="tagline">Your Life.<br/>Your Way.
 // change the navbar as you scroll
 
 $(document).on('scroll', function () {
-  var img = $("#logo-container img")
-  if ($(window).scrollTop() >= 1000 && $(window).scrollTop() < 1850) {
-    img.attr("src", img.attr("src").replace('https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/logobw.png', 'https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo(2).png'));
+  var img = $("#landing #logo-container img")
+  // if ($(window).scrollTop() >= 1000 && $(window).scrollTop() < 1850) {
+    if ($(this).scrollTop() >= $('#about').position().top && $(this).scrollTop() <= $('#gallery').position().top) {
+    img.attr("src", img.attr("src").replace('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logobw.png?&quality=85', 'https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo-color.png'));
   } else {
-    img.attr("src", img.attr("src").replace('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo(2).png', 'https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/logobw.png'));
+    img.attr("src", img.attr("src").replace('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo-color.png', 'https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logobw.png?&quality=85'));
   }
   console.log("this is running");
 });
@@ -38,9 +39,9 @@ $('#gallery-caption').append('<br /><a href="photogallery.aspx" class="btn btn b
 
 $('#gallery #gallery-image .overlay').prepend('<div class="ninety9"><img src="https://scibettas1.github.io/99bridge-staging/assets/images/99graphic.png"></div>');
 
-//add map to the bottom of the page
-
 $('#com-amenities-title').append('<div class="neighborhood-sub-title">HIGHER EDUCATION AND<br />THE GREAT OUTDOORS</div>');
+
+//add map to the bottom of the page
 
 $('#amenities').append('<div id="map"><iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGr0yjNEz31lMcJkV0_sF2rJ2WR57GXdI&q=place_id:ChIJpeRtzuPNw4kRjBdUV1UsENM" allowfullscreen></iframe></div>');
 
