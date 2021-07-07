@@ -12,6 +12,12 @@
     margin: 0;
     padding: 0;
   }
+  .adp, .adp table {
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #2C2C2C;
+    width: 100%;
+}
 
   .controls {
     margin-top: 10px;
@@ -27,7 +33,7 @@
   #origin-input,
   #destination-input {
     background-color: #fff;
-    font-family: Roboto;
+    font-family: 'Poppins';
     font-size: 15px;
     font-weight: 300;
     margin-left: 12px;
@@ -38,21 +44,9 @@
 
   #origin-input:focus,
   #destination-input:focus {
-    border-color: #4d90fe;
+    border-color: #5194b8;
   }
 
-  #mode-selector {
-    color: #fff;
-    background-color: #4d90fe;
-    margin-left: 12px;
-    padding: 5px 11px 0px 11px;
-  }
-
-  #mode-selector label {
-    font-family: Roboto;
-    font-size: 13px;
-    font-weight: 300;
-  }
 </style>
 <script>
   const myLatLng = { lat: 40.37934, lng: -74.310975 };
@@ -137,7 +131,7 @@
       this.directionsService.route(
         {
           origin: { placeId: this.originPlaceId },
-          destination: myLatLng,
+          destination: { placeId: this.destinationPlaceId },
           travelMode: this.travelMode,
         },
         (response, status) => {
