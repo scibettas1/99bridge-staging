@@ -111,6 +111,7 @@ button:focus {
   width: 100%;
   padding: 40px 40px;
   overflow: hidden;
+  font-size: calc(11px + 1.5vw);
 }
 .side-menu-open {
   left: auto !important;
@@ -279,6 +280,10 @@ button:focus {
   line-height: 27px !important;
   text-align: left;
 }
+#gallery #gallery-text {
+  padding: 155px 0 120px;
+}
+
 #gallery #gallery-text #gallery-caption:before {
   content: "The generous one-and two-bedroom residences at 99 Bridge have been designed to offer exceptional comfort with a refined sensibility. Here, contemporary style comes standard with only the finest of custom finishes and everyday conveniences, all with room to spread out and enjoy it.";
 }
@@ -306,7 +311,7 @@ button:focus {
 a#gallerybtn.btn.btn-primary {
   margin: 20px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 21px;
   margin: 20px 0px 0px 0px;
 }
 .floorplans {
@@ -361,7 +366,7 @@ display:none;
   text-align: left;
 }
 #amenities #amenities-text #apt-amenities #apt-amenities-caption:before {
-  content: "Proximity to major highways. Superb shopping, dining and entertainment. Higher educationand top-ranked healthcare. Fabulous parks and the greatoutdoors. New Brunswick, New York City, and New Jersey’s shore points. Wherever you need to go, whatever you love to do, chances are it’s within easy reach of 99 Bridge.";
+  content: "Proximity to major highways. Superb shopping, dining and entertainment. Higher education and top-ranked healthcare. Fabulous parks and the great outdoors. New Brunswick, New York City, and New Jersey’s shore points. Wherever you need to go, whatever you love to do, chances are it’s within easy reach of 99 Bridge.";
   font-size: 18px;
 }
 #amenities #amenities-text #divider {
@@ -370,6 +375,9 @@ display:none;
   top: 35%;
   bottom: 33%;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+#apt-amenities a:focus, #apt-amenities a:hover {
+    color: #353831;
 }
 #amenities .row-bs3 {
   text-align: center;
@@ -412,6 +420,9 @@ footer #new-address {
 footer #footer-links li {
   line-height: 20px;
 }
+footer #footer-links a:hover {
+  color: #c05135;
+}
 footer #address {
   display: none;
 }
@@ -434,13 +445,13 @@ footer #address {
     display: none;
   }
   #menu .ninety9 {
-    width: 20vw;
+    width: 15vw;
 }
 .menu-logo {
   width: 55vw;
   float: left;
-  padding-left: 65px;
-}
+  padding-left: 0px!important;
+  }
   /* <---------------------mobile tagline-------------------------> */
   .tagline {
     font-size: 14vw;
@@ -523,7 +534,7 @@ footer #address {
 
   /* <-------------------------mobile hamburger menu-----------------------------> */
  #nav-container .side-menu {
-    background: #34657f;
+    background: #34657f!important;
     width: 103vw !important;
     height: 103vh;
     left: -100vw;

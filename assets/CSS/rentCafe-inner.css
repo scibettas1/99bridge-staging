@@ -109,6 +109,7 @@ button:focus {
   width: 100%;
   padding: 40px 40px;
   overflow: hidden;
+  font-size: calc(11px + 1.5vw);
 }
 .side-menu-open {
   left: auto !important;
@@ -281,6 +282,9 @@ footer #new-address {
 footer #footer-links li {
   line-height: 20px;
 }
+footer #footer-links a:hover {
+  color: #c05135;
+}
 footer #address {
   display: none;
 }
@@ -289,12 +293,12 @@ footer #address {
 @media (max-width: 1030px) {
 
   #menu .ninety9 {
-    width: 20vw;
+    width: 15vw;
   }
   .menu-logo {
   width: 55vw;
   float: left;
-  padding-left: 65px;
+  padding-left: 0px!important;
   }
 }
 
@@ -330,7 +334,7 @@ footer #address {
 
   /* <-------------------------mobile hamburger menu-----------------------------> */
   #nav-container .side-menu {
-    background: #34657f;
+    background: #34657f!important;
     width: 103vw !important;
     height: 103vh;
     left: -100vw;

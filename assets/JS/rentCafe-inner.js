@@ -1,8 +1,3 @@
-$('title').text(function (index, text) { return text.replace('99 Bridge | Custom Page', 'Features & Amenities of 99 Bridge'); });
-$(document).ajaxComplete(function () {
-  $('title').text(function (index, text) { return text.replace('99 Bridge | Custom Page', 'Features & Amenities of 99 Bridge'); });
-});
-
 // replace resident login with contact
 $('#login-links').append('<li id="contact-btn"><a href="contactus.aspx">CONTACT</a></li>');
 

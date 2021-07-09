@@ -12,12 +12,14 @@
     margin: 0;
     padding: 0;
   }
-  .adp, .adp table {
+
+  .adp,
+  .adp table {
     font-family: 'Poppins';
     font-weight: 300;
     color: #2C2C2C;
     width: 100%;
-}
+  }
 
   .controls {
     margin-top: 10px;
@@ -46,10 +48,16 @@
   #destination-input:focus {
     border-color: #5194b8;
   }
-
 </style>
 <script>
-  const myLatLng = { lat: 40.37934, lng: -74.310975 };
+
+$('title').text(function (index, text) { return text.replace('99 Bridge | Custom Page', 'Map & Directions'); });
+$(document).ajaxComplete(function () {
+  $('title').text(function (index, text) { return text.replace('99 Bridge | Custom Page', 'Map & Directions'); });
+});
+
+
+  const myLatLng = { lat: 40.3793441, lng: -74.3089231 };
   function initMap() {
     const directionsRenderer = new google.maps.DirectionsRenderer();
     const directionsService = new google.maps.DirectionsService();
@@ -79,31 +87,24 @@
     constructor(map) {
       this.map = map;
       this.originPlaceId = "";
-      this.destinationPlaceId = "";
       this.travelMode = "DRIVING";
+      const originInput = document.getElementById("origin-input");
+
+      //These 3 lines render the written directions
       this.directionsService = new google.maps.DirectionsService();
       this.directionsRenderer = new google.maps.DirectionsRenderer();
       this.directionsRenderer.setMap(map);
       this.directionsRenderer.setPanel(document.getElementById("sidebar"));
-      const originInput = document.getElementById("origin-input");
-      const destinationInput = document.getElementById("destination-input");
-      const modeSelector = document.getElementById("mode-selector");
-      const originAutocomplete = new google.maps.places.Autocomplete(originInput);
+
+      const originAutocomplete = new google.maps.places.Autocomplete(
+        originInput, {
+        placeIdOnly: true
+      });
       // Specify just the place data fields that you need.
       originAutocomplete.setFields(["place_id"]);
-      const destinationAutocomplete = new google.maps.places.Autocomplete(
-        destinationInput
-      );
       this.setupPlaceChangedListener(originAutocomplete, "ORIG");
-      this.setupPlaceChangedListener(destinationAutocomplete, "DEST");
       this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
-      this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
-        destinationInput
-      );
-      this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(modeSelector);
     }
-    // Sets a listener on a radio button to change the filter type on Places
-    // Autocomplete.
     setupPlaceChangedListener(autocomplete, mode) {
       autocomplete.bindTo("bounds", this.map);
       autocomplete.addListener("place_changed", () => {
@@ -114,24 +115,20 @@
           return;
         }
 
-        if (mode === "ORIG") {
-          this.originPlaceId = place.place_id;
-        } else {
-          this.destinationPlaceId = place.place_id;
-        }
+        this.originPlaceId = place.place_id;
         this.route();
-        
+
       });
     }
     route() {
-      if (!this.originPlaceId || !this.destinationPlaceId) {
+      if (!this.originPlaceId) {
         return;
       }
       const me = this;
       this.directionsService.route(
         {
           origin: { placeId: this.originPlaceId },
-          destination: { placeId: this.destinationPlaceId },
+          destination: myLatLng,
           travelMode: this.travelMode,
         },
         (response, status) => {
@@ -154,8 +151,6 @@
 
 <div id="controls">
   <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location" />
-
-  <input id="destination-input" class="controls" type="text" placeholder="99 Old Amboy Road, Old Bridge, NJ 08857" />
 
 </div>
 
