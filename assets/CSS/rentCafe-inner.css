@@ -30,11 +30,58 @@ h6 {
   z-index: 100;
   position: fixed;
   background-color: #34657f;
-  width: 101%;
+  right: 0px;
+  left: 0px;
   text-align: center;
   color: white;
   padding-top: 5px;
+  overflow: hidden;
 }
+
+/* .marquee {
+  width: 100%;
+  min-width: 650px;
+  height: 100%;
+  z-index: 101;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left -10s linear infinite;
+  -webkit-animation: scroll-left -10s linear infinite;
+  animation: scroll-left 15s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+      -webkit-transform: translateX(100%);
+  }
+  100% {
+      -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+} */
 
 /* <-------------------------login links-----------------------------> */
 
@@ -367,7 +414,7 @@ footer #address {
   }
 }
 /* <--------------------- mobile for iPad 10.5in -------------------------> */
-@media (max-width: 877px) and (min-width: 764px) {
+@media (max-width: 877px) and (min-width: 769px) {
   #landing #logo-container {
     left: 14px;
   }

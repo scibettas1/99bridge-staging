@@ -9,7 +9,7 @@ $('#menu #HomeMenu').prepend('<div class="menu-logo"><img src="https://scibettas
 
 // added divs to the navbar
 
-$('#landing').prepend('<div id="custom-nav">This is Where the specials should go</div>');
+$('#landing').prepend('<div id="custom-nav"><p class="marquee">UP TO 2 MONTHS FREE!</p></div>');
 
 // tagline
 
@@ -21,14 +21,14 @@ $(document).on('scroll', function () {
   var img = $("#landing #logo-container img")
   // if ($(window).scrollTop() >= 1000 && $(window).scrollTop() < 1850) {
     if ($(this).scrollTop() >= $('#about').position().top - 100 && $(this).scrollTop() <= $('#gallery').position().top - 100) {
-    img.attr("src", img.attr("src").replace('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logobw.png?&quality=85', 'https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo-color.png'));
+    img.attr("src", img.attr("src").replace('https://cdngeneralcf.rentcafe.com/dmslivecafe/3/1372760/logobw.png?&quality=85', 'https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo-color.png'));
     console.log("first switch");
   } else 
   if ($(this).scrollTop() >= $('#gallery-image').position().top - 100 && $(this).scrollTop() <= $('#amenities').position().top - 100) {
-    img.attr("src", img.attr("src").replace('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logobw.png?&quality=85', 'https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo-color.png'));
+    img.attr("src", img.attr("src").replace('https://cdngeneralcf.rentcafe.com/dmslivecafe/3/1372760/logobw.png?&quality=85', 'https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo-color.png'));
     console.log("second switch");
   } else {
-    img.attr("src", img.attr("src").replace('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo-color.png', 'https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logobw.png?&quality=85'));
+    img.attr("src", img.attr("src").replace('https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/logo-color.png', 'https://cdngeneralcf.rentcafe.com/dmslivecafe/3/1372760/logobw.png?&quality=85'));
   }
 });
 

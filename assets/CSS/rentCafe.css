@@ -35,7 +35,53 @@ h6 {
   text-align: center;
   color: white;
   padding-top: 5px;
+  overflow: hidden;
 }
+
+/* .marquee {
+  width: 100%;
+  min-width: 650px;
+  height: 100%;
+  z-index: 101;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left -10s linear infinite;
+  -webkit-animation: scroll-left -10s linear infinite;
+  animation: scroll-left 15s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+      -webkit-transform: translateX(100%);
+  }
+  100% {
+      -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+} */
 
 /* <-------------------------login links-----------------------------> */
 
@@ -152,7 +198,7 @@ button:focus {
   font-size: 116px;
   line-height: 116px;
   color: white;
-  margin-top: 60vh;
+  margin-top: 65vh;
   margin-left: 67px;
   margin-right: auto;
   width: fit-content;
@@ -253,9 +299,10 @@ button:focus {
   display: none;
 }
 #about #about-right {
-  background-image: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/Unit%20Kitchen%20Rendering%20-%20FINAL,%20high%20res.jpg);
+  background-image: url(https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-72.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 /* <--------------------- availability section (previously the gallery section) -------------------------> */
@@ -300,7 +347,7 @@ button:focus {
   background: none;
 }
 #gallery #gallery-image {
-  background: url(https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/20200723_One500Exteriors-0094.jpg)
+  background: url(https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-34.jpg)
     center center no-repeat fixed;
   background-size: cover;
   width: 100vw;
@@ -337,6 +384,9 @@ a#gallerybtn.btn.btn-primary {
 
 #amenities {
   background-color: #34657f;
+}
+.amenities-list {
+  display:none;
 }
 
 #amenities #amenities-text {

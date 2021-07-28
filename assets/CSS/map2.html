@@ -90,16 +90,13 @@ $(document).ajaxComplete(function () {
       this.travelMode = "DRIVING";
       const originInput = document.getElementById("origin-input");
 
-      //These 3 lines render the written directions
+      //These 4 lines render the written directions
       this.directionsService = new google.maps.DirectionsService();
       this.directionsRenderer = new google.maps.DirectionsRenderer();
       this.directionsRenderer.setMap(map);
       this.directionsRenderer.setPanel(document.getElementById("sidebar"));
 
-      const originAutocomplete = new google.maps.places.Autocomplete(
-        originInput, {
-        placeIdOnly: true
-      });
+      const originAutocomplete = new google.maps.places.Autocomplete(originInput);
       // Specify just the place data fields that you need.
       originAutocomplete.setFields(["place_id"]);
       this.setupPlaceChangedListener(originAutocomplete, "ORIG");

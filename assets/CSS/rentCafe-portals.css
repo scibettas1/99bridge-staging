@@ -30,11 +30,58 @@ h6 {
   z-index: 100;
   position: fixed;
   background-color: #34657f;
-  width: 101%;
+  right: 0px;
+  left: 0px;
   text-align: center;
   color: white;
   padding-top: 5px;
+  overflow: hidden;
 }
+
+/* .marquee {
+  width: 100%;
+  min-width: 650px;
+  height: 100%;
+  z-index: 101;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left -10s linear infinite;
+  -webkit-animation: scroll-left -10s linear infinite;
+  animation: scroll-left 15s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+      -webkit-transform: translateX(100%);
+  }
+  100% {
+      -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+} */
 
 /* <---------------------logo & its container-------------------------> */
 
@@ -104,16 +151,24 @@ footer {
   font-weight: 300;
   padding: 30px 0;
 }
-#footer-image img {
-  max-height: 66px;
+footer #new-address {
+  margin-bottom: 30px;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 footer #footer-links li {
   line-height: 20px;
 }
-#address {
-  font-size: 28px;
-  line-height: 40px;
+footer #footer-links a:hover {
+  color: #c05135;
 }
+footer #address {
+  display: none;
+}
+#eho-copyright {
+  display:none;
+}
+
 /* temporary code to hide inactive social media */
 .social-media-Pinterest,
 .social-media-Instagram {
