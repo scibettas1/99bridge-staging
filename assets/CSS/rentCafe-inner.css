@@ -26,7 +26,7 @@ h6 {
   color: #34657f;
 }
 #custom-nav {
-  height: 36px;
+  height: 42px;
   z-index: 100;
   position: fixed;
   background-color: #34657f;
@@ -38,8 +38,11 @@ h6 {
   overflow: hidden;
 }
 
-/* .marquee {
-  width: 100%;
+@media (min-width: 800px) {
+.marquee {
+  font-size: 23px;
+  margin: 4px;
+  /* width: 100%;
   min-width: 650px;
   height: 100%;
   z-index: 101;
@@ -49,10 +52,10 @@ h6 {
   transform: translateX(100%);
   -moz-animation: scroll-left -10s linear infinite;
   -webkit-animation: scroll-left -10s linear infinite;
-  animation: scroll-left 15s linear infinite;
+  animation: scroll-left 15s linear infinite; */
 }
-
-@-moz-keyframes scroll-left {
+}
+/* @-moz-keyframes scroll-left {
   0% {
       -moz-transform: translateX(100%);
   }
@@ -141,6 +144,9 @@ button:focus {
 }
 .navbar .nav {
   margin: 100px 10px 0 0;
+}
+.navbar .nav > li {
+  margin-bottom: calc(11px + 1.5vw);
 }
 
 #nav-container .side-menu {
@@ -238,18 +244,44 @@ button:focus {
 .fp-description {
   display: none;
 }
-.fp-button .btn, select {
+.fp-button .btn, select,
+button.btn.btn-blank,
+.bootstrap-select.btn-group .dropdown-toggle .filter-option{
   font-family: 'Poppins';
 }
-
+.buttonRadio-label:focus,
+.buttonCheckbox-label:focus {
+  outline-color: #34657f;
+}
+.fp-filter-slider .noUi-connect {
+  background: #34657f!important;
+}
 #desktop-floorplanOverlay-Container .btn-viewDetails:hover,
 #desktop-floorplanOverlay-Container .fp-switcher a i:hover,
 #desktop-floorplanOverlay-Container .fp-switcher a:hover,
-#filter-item-show-advanced a {
+#filter-item-show-advanced a,
+.fp-price .amount, #filtersModal .modal-header .resetFilters,
+.buttonCheckbox input[type=checkbox]:checked+label, .buttonRadios input[type=radio]:checked+label,
+.buttonCheckbox input[type=checkbox]+label:hover, .buttonRadios input[type=radio]+label:hover,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark:before,
+.bootstrap-select .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, .dropdown-submenu:focus>a, .dropdown-submenu:hover>a {
     color: #34657f;
 }
+input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus, select:focus,
+.bootstrap-select .dropdown-toggle:focus,
+.noUi-handle.noUi-handle-lower:focus,
+.noUi-handle.noUi-handle-upper:focus{
+  outline: none!important;
+}
 
-
+.buttonCheckbox input[type=checkbox]:checked+label, .buttonRadios input[type=radio]:checked+label {
+  background-color: #34657f!important;
+  color: #fff!important;
+  border-color: #34657f!important;
+}
+.btn.btn-blank.fp-btn-cancelFilters:active, .btn.btn-blank.fp-btn-cancelFilters:focus, .btn.btn-blank.fp-btn-cancelFilters:hover {
+  color: #c05135;
+}
 
 /* <--------------------- map page -------------------------> */
 .leaflet-bottom,
@@ -335,6 +367,38 @@ footer #footer-links a:hover {
 footer #address {
   display: none;
 }
+footer #eho-copyright-new {
+  display:none;
+}
+.incentive {
+  line-height: 18px;
+  margin: 24px 0px 28px;
+}
+.go-top {
+  background: #c05135;
+}
+.go-top:hover {
+  background-color: #f2d5bb;
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+
+
+/* <--------------------- nudge -------------------------> */
+/* #nudgeMarketWrap .primary-color-background {
+  background-color: #34657f;
+  height: 53px;
+}
+.nudge_pad-left {
+  padding: 0px 28px;
+  min-height: 30px;
+}
+.nudge button.action {
+  font-family: 'Poppins';
+  padding: 14px 28px;
+  font-size: 30px;
+} */
+
 
 /* <--------------------- mobile -------------------------> */
 @media (max-width: 1030px) {
@@ -348,7 +412,17 @@ footer #address {
   padding-left: 0px!important;
   }
 }
-
+@media (max-width: 900px) {
+  footer #eho-copyright {
+    display:none;
+  }
+  footer #eho-copyright-new {
+    display:inline-block;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 680px) {
   /* <--------------------- mobile nav & login links-------------------------> */
   header {
@@ -379,30 +453,38 @@ footer #address {
     margin: 28px 0px;
   }
 
-  /* <-------------------------mobile hamburger menu-----------------------------> */
-  #nav-container .side-menu {
-    background: #34657f!important;
-    width: 103vw !important;
-    height: 103vh;
-    left: -100vw;
-    padding-top: 50px;
-    overflow: hidden;
+   /* <-------------------------mobile hamburger menu-----------------------------> */
+#nav-container .side-menu {
+  background: #34657f!important;
+  width: 103vw!important;
+  height: 130vh;
+  left: -100vw;
+  padding-top: 50px;
+  overflow: hidden;
 }
-  header #nav-container .side-menu .navbar .nav {
-    width: 10vw;
-  }
-  .ninety9 {
-    width: 16vw;
-  }
-  .navbar .nav > li > a {
-    padding: 0 0px 0 9px;
-  }
-  .navbar .nav > li {
-    width: 200px;
-  }
+header #nav-container .side-menu .navbar .nav {
+  width: 10vw;
+}
+#nav-container .menu-open .ninety9 {
+  width: 16vw;
+}
+.navbar .nav {
+  margin: 65px 10px 0 0;
+}
+.navbar .nav > li > a {
+  padding: 0 0px 0 9px;
+}
+.navbar .nav > li {
+  width: 200px;
+}
+.menu-logo {
+  padding-left: 6px;
+}
+
   /* <-------------------------amenities page-----------------------------> */
   .amenity_description1,  .amenity_description2 {
     width:100%;
+    float: left;
   }
 }
 

@@ -26,7 +26,7 @@ h6 {
   color: #34657f;
 }
 #custom-nav {
-  height: 36px;
+  height: 42px;
   z-index: 100;
   position: fixed;
   background-color: #34657f;
@@ -38,8 +38,11 @@ h6 {
   overflow: hidden;
 }
 
-/* .marquee {
-  width: 100%;
+@media (min-width: 800px) {
+.marquee {
+  font-size: 23px;
+  margin: 4px;
+  /* width: 100%;
   min-width: 650px;
   height: 100%;
   z-index: 101;
@@ -49,10 +52,10 @@ h6 {
   transform: translateX(100%);
   -moz-animation: scroll-left -10s linear infinite;
   -webkit-animation: scroll-left -10s linear infinite;
-  animation: scroll-left 15s linear infinite;
+  animation: scroll-left 15s linear infinite; */
 }
-
-@-moz-keyframes scroll-left {
+}
+/* @-moz-keyframes scroll-left {
   0% {
       -moz-transform: translateX(100%);
   }

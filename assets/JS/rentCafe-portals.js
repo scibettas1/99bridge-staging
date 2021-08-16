@@ -1,6 +1,6 @@
 // added divs to the navbar
 
-$('#landing').prepend('<div id="custom-nav"><p class="marquee">UP TO 2 MONTHS FREE!</p></div>');
+$('#landing').prepend('<div id="custom-nav"><p class="marquee">UP TO 2 MONTHS FREE!*</p></div>');
 
 // change the navbar as you scroll
 

@@ -9,7 +9,7 @@ $('#menu #HomeMenu').prepend('<div class="menu-logo"><img src="https://scibettas
 
 // added divs to the navbar
 
-$('#landing').prepend('<div id="custom-nav"><p class="marquee">UP TO 2 MONTHS FREE!</p></div>');
+$('#landing').prepend('<div id="custom-nav"><p class="marquee">UP TO 2 MONTHS FREE!*</p></div>');
 
 // tagline
 
@@ -78,8 +78,13 @@ $('#footer-image').prepend('<div id="new-address">(732) 970-8444 &nbsp|&nbsp <a 
 // }
 
 // initMap()
-
+const currentYear = new Date().getFullYear();
+console.log(currentYear)
 
 $('#eho-copyright').append('<div class="">Web Design by <a href="https://scibettas1.github.io/#/" target="_blank">Sam Scibetta</a></div>');
+
+$('#social-media').append('<div class="incentive">* Incentives are based on a 26 month lease term and may be valid on select homes. Additional incentives may be available. Prices and promotions are subject to change at any time. Please contact the leasing office for full details.</div>');
+
+$('#social-media').append('<div id="eho-copyright-new"> © ' + currentYear + ' Yardi Systems, Inc. All Rights Reserved.<br/>Web Design by <a href="https://scibettas1.github.io/#/" target="_blank">Sam Scibetta</a></div>');
 
 

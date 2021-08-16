@@ -26,7 +26,7 @@ h6 {
   color: #34657f;
 }
 #custom-nav {
-  height: 36px;
+  height: 42px;
   z-index: 100;
   position: fixed;
   background-color: #34657f;
@@ -38,8 +38,11 @@ h6 {
   overflow: hidden;
 }
 
-/* .marquee {
-  width: 100%;
+@media (min-width: 800px) {
+.marquee {
+  font-size: 23px;
+  margin: 4px;
+  /* width: 100%;
   min-width: 650px;
   height: 100%;
   z-index: 101;
@@ -49,10 +52,10 @@ h6 {
   transform: translateX(100%);
   -moz-animation: scroll-left -10s linear infinite;
   -webkit-animation: scroll-left -10s linear infinite;
-  animation: scroll-left 15s linear infinite;
+  animation: scroll-left 15s linear infinite; */
 }
-
-@-moz-keyframes scroll-left {
+}
+/* @-moz-keyframes scroll-left {
   0% {
       -moz-transform: translateX(100%);
   }
@@ -82,7 +85,12 @@ h6 {
       transform: translateX(-100%);
   }
 } */
-
+@media (min-width: 1030px) {
+#background_slider {
+  overflow: unset;
+  top: -250px;
+}
+}
 /* <-------------------------login links-----------------------------> */
 
 header #login-links {
@@ -142,6 +150,9 @@ button:focus {
 }
 .navbar .nav {
   margin: 100px 10px 0 0;
+}
+.navbar .nav > li {
+  margin-bottom: calc(11px + 1.5vw);
 }
 
 #nav-container .side-menu {
@@ -222,8 +233,8 @@ button:focus {
 .arrow {
   color: white;
   font-family: "Viaoda Libre", cursive;
-  font-size: 250px;
-  margin-top: -48px;
+  font-size: 21vw;
+  margin-top: -6vw;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
@@ -350,7 +361,7 @@ button:focus {
   background: url(https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-34.jpg)
     center center no-repeat fixed;
   background-size: cover;
-  width: 100vw;
+  width: 100vw!important;
   min-height: 800px;
   position: relative;
 }
@@ -476,6 +487,13 @@ footer #footer-links a:hover {
 footer #address {
   display: none;
 }
+footer #eho-copyright-new {
+  display:none;
+}
+.incentive {
+  line-height: 18px;
+  margin: 24px 0px 28px;
+}
 .go-top {
   background: #c05135;
 }
@@ -484,10 +502,11 @@ footer #address {
   text-decoration: none;
   transition: ease 0.3s;
 }
+
 /* <--------------------- mobile -------------------------> */
 @media (max-width: 1030px) {
   #background_slider {
-    background: url(https://cdngeneral.rentcafe.com/dmslivecafe/2/70799/lounge.jpg)
+    background: url(https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-40.jpg)
       center center no-repeat #34657f;
     background-size: cover;
   }
@@ -496,11 +515,11 @@ footer #address {
   }
   #menu .ninety9 {
     width: 15vw;
-}
-.menu-logo {
-  width: 55vw;
-  float: left;
-  padding-left: 0px!important;
+  }
+  .menu-logo {
+   width: 55vw;
+    float: left;
+    padding-left: 0px!important;
   }
   /* <---------------------mobile tagline-------------------------> */
   .tagline {
@@ -517,8 +536,11 @@ footer #address {
     display: none;
   }
   #gallery #gallery-image {
-    min-height: 901px !important;
-  }
+    background: url(https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-34.jpg) no-repeat;
+    background-size: 126vw;
+    width: 100vw!important;
+    position: relative;
+}
   .overlay {
     position: relative;
     overflow: hidden;
@@ -538,17 +560,25 @@ footer #address {
   
   #gallery #gallery-image .overlay .ninety9 {
     z-index: 10;
-}
+  }
   #amenities #left-image,
   #amenities #right-image {
     background-position: top center;
     min-height: 400px;
   }
 }
-
-
+@media (max-width: 900px) {
+  footer #eho-copyright {
+    display:none;
+  }
+  footer #eho-copyright-new {
+    display:inline-block;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 680px) {
-
   .amenities {
     top: 30%;
   }
@@ -583,10 +613,10 @@ footer #address {
   }
 
   /* <-------------------------mobile hamburger menu-----------------------------> */
- #nav-container .side-menu {
+#nav-container .side-menu {
     background: #34657f!important;
-    width: 103vw !important;
-    height: 103vh;
+    width: 103vw!important;
+    height: 130vh;
     left: -100vw;
     padding-top: 50px;
     overflow: hidden;
@@ -597,6 +627,9 @@ footer #address {
   #nav-container .menu-open .ninety9 {
     width: 16vw;
   }
+  .navbar .nav {
+    margin: 65px 10px 0 0;
+}
   .navbar .nav > li > a {
     padding: 0 0px 0 9px;
   }
