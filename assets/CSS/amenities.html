@@ -1,21 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    section {
+        min-height: 633px;
+        height: fit-content;
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        section {
-            min-height: 633px;
-            height: fit-content;
-        }
-        .img-margin {
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
+    .img-margin {
+        margin-bottom: 10px;
+        box-shadow: 3px 3px 9px #0000002b;
+    }
+
+    section.virtual-tours {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding: 20px;
+    }
+
+    section.virtual-tours .holdcontent {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+        display: block;
+        position: relative;
+    }
+
+    .tour {
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .tour iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
 
 <body>
 
@@ -30,78 +55,88 @@
     <div class="container">
         <h1>Features &amp; Amenities</h1>
         <br />
-        <br />
-        &nbsp; &nbsp;
-        <section>
-            <h2>Lifestyle Amenities</h2>
-            <div class="amenity_description2">
-                <ul class="amenities-list"><br />
-                    <li>Resident Lounge</li>
-                    <li>Billiards &amp; shuffleboard</li>
-                    <li>Coffee bar</li>
-                    <li>Fitness center with virtual training</li>
-                    <li>Co-working lounge &amp; private offices</li>
-                    <li>Children&#39;s Playroom</li>
-                    <li>Outdoor swimming pool</li>
-                    <li>BBQs &amp; outdoor dining</li>
-                    <li>Firepit</li>
-                    <li>Outdoor bar &amp; TVs</li>
-                    <li>Lawn areas</li>
-                    <li>Dog run</li>
-                    <li>Amazon&reg; package lockers</li>
-                    <li>Onsite parking</li>
-                    <li>24/7 onsite maintenance</li>
-                </ul>
+        <div class="holdcontent">
+            <div class="tour">
+                <iframe src="https://www.youtube.com/embed/Qp1aehl12vg" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""></iframe>
             </div>
-            <div class="amenity_description1">
-                <img class="img-margin" src="https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-38.jpg" width="100%"
-                    height="auto" />
-                <img class="img-margin" src="https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-21.jpg" width="100%"
-                    height="auto" />
+        </div>
+        <section>
+            <br /><br />
+            <row class="row-fluid">
+                <div class="span6">
+                    <h2>Lifestyle Amenities</h2>
+                    <ul class="amenities-list"><br />
+                        <li>Resident Lounge</li>
+                        <li>Billiards &amp; shuffleboard</li>
+                        <li>Coffee bar</li>
+                        <li>Fitness center with virtual training</li>
+                        <li>Co-working lounge &amp; private offices</li>
+                        <li>Children&#39;s Playroom</li>
+                        <li>Outdoor swimming pool</li>
+                        <li>BBQs &amp; outdoor dining</li>
+                        <li>Firepit</li>
+                        <li>Outdoor bar &amp; TVs</li>
+                        <li>Lawn areas</li>
+                        <li>Dog run</li>
+                        <li>Amazon&reg; package lockers</li>
+                        <li>Onsite parking</li>
+                        <li>24/7 onsite maintenance</li>
+                    </ul>
+                </div>
+                <div class="span6">
+                    <img class="img-margin" src="https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-38.jpg"
+                        width="100%" height="auto" />
+                    <img class="img-margin" src="https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-21.jpg"
+                        width="100%" height="auto" />
 
-            </div>
+                </div>
+            </row>
         </section>
+        <hr />
         <section>
-            <hr />
             <br /><br />
             <h2>Residence Features</h2>
-            <div class="amenity_description2">
-                <br />
-                <i>The Kitchen</i>
+            <row class="row-fluid">
+                <div class="span6">
+                    <br />
+                    <i>The Kitchen</i>
 
-                <ul class="amenities-list"><br />
-                    <li>Stainless steel appliances</li>
-                    <li>Gas Range &amp; side-by-side refrigerator</li>
-                    <li>White quartz counter tops</li>
-                    <li>Full height tiled back splash</li>
-                    <li>Esresso cabinetry</li>
-                    <li>Custom wine storage</li>
-                </ul>
-                <br />
-                <img class="img-margin" src="https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-73.jpg" width="100%"
-                    height="auto" />
+                    <ul class="amenities-list"><br />
+                        <li>Stainless steel appliances</li>
+                        <li>Gas Range &amp; side-by-side refrigerator</li>
+                        <li>White quartz counter tops</li>
+                        <li>Full height tiled back splash</li>
+                        <li>Esresso cabinetry</li>
+                        <li>Custom wine storage</li>
+                    </ul>
+                    <br />
+                    <img class="img-margin" src="https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-73.jpg"
+                        width="100%" height="auto" />
+                </div>
+                <div class="span6">
+                    <br />
+                    <i>The Living Area</i>
 
-            </div>
-            <div class="amenity_description1">
-                <br />
-                <i>The Living Area</i>
-
-                <ul class="amenities-list"><br />
-                    <li>9&#39; Ceilings</li>
-                    <li>Luxury Plank flooring</li>
-                    <li>Custom modular closets</li>
-                    <li>Complimentary window treatments</li>
-                    <li>In-home washer &amp; dryer</li>
-                    <li>Private outdoor space available</li>
-                </ul>
-                <br />
-                <img class="img-margin" src="https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-71.jpg" width="100%"
-                    height="auto" />
-            </div>
+                    <ul class="amenities-list"><br />
+                        <li>9&#39; Ceilings</li>
+                        <li>Luxury Plank flooring</li>
+                        <li>Custom modular closets</li>
+                        <li>Complimentary window treatments</li>
+                        <li>In-home washer &amp; dryer</li>
+                        <li>Private outdoor space available</li>
+                    </ul>
+                    <br />
+                    <img class="img-margin"
+                        src="https://cdngeneralcf.rentcafe.com/dmslivecafe/2/70799/untitled-77_Optimized.jpg"
+                        width="100%" height="auto" />
+                </div>
+            </row>
         </section>
         <section>
             <br /><br />
-            <div class="amenity_description1">
+            <row class="row-fluid">
                 <i>The Bathroom</i>
 
                 <ul class="amenities-list"><br />
@@ -109,10 +144,31 @@
                     <li>Full-height tiled wet walls</li>
                     <li>Espresso vanities</li>
                 </ul>
-            </div>
+            </row>
+            <br /><br />
+            <hr />
+            <p>The unrivaled experience at 99 Bridge begins with a private tour of our refined, tasteful apartments
+                nestled
+                in the heart of our pet-friendly community. As soon as you set foot on our grounds, before even stepping
+                through the doorframe of your next home, you will be wrapped in the comforts and amenities our residents
+                value and cherish. </p>
+            <p>As a resident, your well-being is our greatest concern. With you in mind, <a href="/">99 Bridge</a>
+                provides
+                a myriad of amenities, including an outdoor swimming pool, fitness center with virtual training, and
+                Amazon
+                package lockers, available to residents living in one of our <a href="/floorplans.aspx"> one and
+                    two-bedroom
+                    bedroom</a> apartments. Plus, you can’t go wrong with a dog run for your furry friend, right on the
+                premises!</p>
+            <p>Just imagine, you get all of this simply as part of the 99 Bridge life, and we haven’t even discussed our
+                <a href="/map.aspx">ideal location</a> near PNC Arts Center.
+            </p>
+            <p>Don’t waste any more time. Stop by today and see for yourself why 99 Bridge is undoubtedly the top
+                location
+                in Old Bridge. <a href="/contactus.aspx">Visit us</a> today for your personal tour of 99 Bridge, where
+                you
+                can lead the life you want.</p>
+            <br /><br />
         </section>
+
     </div>
-
-</body>
-
-</html>

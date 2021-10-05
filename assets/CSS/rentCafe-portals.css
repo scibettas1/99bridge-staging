@@ -144,6 +144,13 @@ h6 {
   color: #353831;
   background: #f2d5bb;
 }
+/* <--------------------- icons -------------------------> */
+
+.media>.pull-left {
+  margin-right: 10px;
+  filter: hue-rotate(-32deg) saturate(280%) brightness(78%);
+}
+
 /* <--------------------- footer -------------------------> */
 
 footer {

@@ -176,7 +176,7 @@ button:focus {
   float: left;
 }
 .menu-logo {
-  width: 75vw;
+  width: 55vw;
   float: left;
   padding-left: 38px;
 }
@@ -341,6 +341,14 @@ a.address-link{
 }
 #info_panel .socialmedia-icons {
   margin-left: 42px;
+}
+/* <--------------------- blog -------------------------> */
+
+#categories-2, #respond {
+  display:none;
+}
+.rc-single-entry-title {
+  margin-top: -127px;
 }
 
 /* <--------------------- footer -------------------------> */

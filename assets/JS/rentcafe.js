@@ -33,7 +33,7 @@ $(document).on('scroll', function () {
 });
 
 
-// replace 99 bridge with and address of sophistication
+// replace 99 bridge with ARRIVE AT
 
 $('#ctmcontentcontainer h1').text(function (index, text) { return text.replace('99 Bridge', 'AN ADDRESS OF SOPHISTICATION'); });
 $(document).ajaxComplete(function () {

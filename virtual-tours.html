@@ -1,13 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>99 Bridge</title>
-</head>
-<body>
-    <script language="javascript" type="text/javascript" src="js/navbar.js"></script>
-    
-</body>
-</html>
+<style>
+section.virtual-tours {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+}
+section.virtual-tours .holdcontent {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: block;
+    position: relative;
+}
+.tour {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.tour iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.anchor {
+    position: relative;
+}
+.anchor #whole,
+.anchor #onebr,
+.anchor #twobr,
+.anchor #up {
+    position: absolute;
+    left: 0;
+    top: -97px; /* change this value to match the height of the header */
+    height: 0;
+    width: 0;
+}
+
+
+</style>
+
+<div class="holdcontent">
+    <h1 class="anchor">Virtual Tours<span  id="up"></span></h1>
+    <br />
+    <a href="#whole" class="btn btn-primary">Community</a>
+    <a href="#onebr" class="btn btn-primary">1 Bedroom</a>
+    <a href="#twobr" class="btn btn-primary">2 Bedroom</a>
+    <div class="tour anchor">
+        <span id="whole"></span>
+      <iframe src="https://www.youtube.com/embed/_f_7D_uI6n0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    <br /><br />
+    <a href="#up" class="btn btn-primary">Return to top</a>
+    <div class="tour anchor">
+        <span id="onebr"></span>
+      <iframe src="https://www.youtube.com/embed/Bbly1YUBcBU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    <br /><br />
+    <a href="#up" class="btn btn-primary">Return to top</a>
+    <div class="tour anchor">
+        <span id="twobr"></span>
+      <iframe src="https://www.youtube.com/embed/r5s1IcOdbEI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    <br /><br />
+    <a href="#up" class="btn btn-primary">Return to top</a>
+</div>
